@@ -4,10 +4,9 @@ function isEnoughCapacity(products, containerSize) {
         sum += products[product]
     }
     if (sum <= containerSize) {
-        return `true`
+        return sum <= containerSize
     }
-    return `false`
-    
+    return sum <= !containerSize
 }
 
 
